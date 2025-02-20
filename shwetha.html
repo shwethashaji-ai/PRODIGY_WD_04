@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Web Developer Portfolio</title>
+    <style>
+        /* Global styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: #f0f4f8;
+            color: #333;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Roboto', sans-serif;
+            color: #222;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        button {
+            padding: 12px 25px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Home Section */
+        .home {
+            background: linear-gradient(135deg, #5f27cd, #a29bfe);
+            color: white;
+            height: 150vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .home .intro {
+            flex: 1;
+            padding: 20px;
+            max-width: 600px;
+        }
+
+        .home .photo {
+            flex: 1;
+            margin-top: 20px;
+        }
+
+        .home .photo img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 5px solid white;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .home h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .home p {
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+
+        .home button {
+            font-size: 18px;
+        }
+
+        /* About Section */
+        .about {
+            background-color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin-top: -50px;
+            z-index: 10;
+            position: relative;
+        }
+
+        .about h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        /* Projects Section */
+        .projects {
+            padding: 60px 20px;
+            background: #f0f4f8;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .project-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            margin: 25px;
+            max-width: 300px;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .project-card h3 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .project-card p {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .project-card a {
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .project-card a:hover {
+            color: #007BFF;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: linear-gradient(135deg, #00b894, #6c5ce7);
+            padding: 60px 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        form input, form textarea {
+            width: 80%;
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        form button {
+            width: 80%;
+            padding: 15px;
+            background-color: #fff;
+            color: #333;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        form button:hover {
+            background-color: #f39c12;
+            color: white;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="container">
+            <div class="intro">
+                <h1>Hi, I'm SHWETHA SHAJI</h1>
+                <p>I'm a passionate Web Developer focused on creating clean, responsive, and user-friendly websites.</p>
+                <button onclick="location.href='#projects'">View My Work</button>
+            </div>
+            <div class="photo">
+                <img src="C:/Users/suja george/Downloads/shweyy-modified.png" alt="Shweyy Image" height="600" width="400">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>I'm a web developer with a passion for building beautiful and functional websites. I specialize in frontend technologies like HTML, CSS and JavaScript, and I'm always eager to learn new tools and frameworks to create innovative solutions.</p>
+        <h3>Education:</h3>
+        <p>Persuing my Bachelor's Degree in Bachelor of Computer Applications from Bengaluru City University</p>
+        <h3>Professional Experience:</h3>
+        <p>Working as a Web development Intern at Prodigy Infotech from 15th February,2025 - 15th March,2025</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2>My Projects</h2>
+        <div class="project-card">
+            <h3>Pictionary Game</h3>
+            <p>A fun multiplayer Pictionary game built using HTML, CSS, and JavaScript. Players take turns drawing and guessing words within a time limit.</p>
+            <a href="https://github.com/shwethashaji-ai/Pictionary_game" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project-card">
+            <h3>Money Split App</h3>
+            <p>A simple and efficient web-based tool for tracking shared expenses and splitting bills among friends, family, or roommates.</p>
+            <a href="https://github.com/shwethashaji-ai/money_split_app" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project-card">
+            <h3>EcoJunk App</h3>
+            <p>Eco Junk is a web-based platform that promotes recycling and sustainability by allowing users to register, upload recyclable items, add items to their cart, and make payments.</p>
+            <a href="https://github.com/shwethashaji-ai/EcoJunk_app" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project-card">
+            <h3>Simple Navbar Webpage</h3>
+            <p>This project is a simple, responsive webpage with a fixed navigation bar. The navigation bar changes color on scrolling and provides smooth navigation between different sections of the page.</p>
+            <a href="https://github.com/shwethashaji-ai/PRODIGY_WD_01" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project-card">
+            <h3>Stopwatch Web App</h3>
+            <p>A simple and visually appealing stopwatch web application built using HTML, CSS, and JavaScript.</p>
+            <a href="https://github.com/shwethashaji-ai/PRODIGY_WD_02" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project-card">
+            <h3>Tic-Tac-Toe</h3>
+            <p>Experience the classic Tic-Tac-Toe game in a modern and interactive web-based format! This game is built using HTML, CSS, and JavaScript, allowing two players to enjoy a seamless gaming experience with real-time status updates and an intuitive interface.</p>
+            <a href="https://github.com/shwethashaji-ai/PRODIGY_WD_02" target="_blank">View on GitHub</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 shwetha. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Message Sent! Thank you for reaching out.");
+        });
+    </script>
+
+</body>
+</html>
+
